@@ -18,7 +18,7 @@ const Layout = ({ children }: LayoutProps) => {
               </div>
               <div>
                 <h1 className="text-xl font-semibold text-eucalyptus-dark">Cessão</h1>
-                <p className="text-sm text-gray-500">Plataforma FIDC</p>
+                <p className="text-sm text-gray-500">Plataforma FIDIC</p>
               </div>
             </div>
             

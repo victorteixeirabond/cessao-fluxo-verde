@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom eucalyptus palette
+				'eucalyptus-dark': 'rgb(22 78 99)',
+				'eucalyptus-light': 'rgb(167 225 195)',
+				'eucalyptus-pale': 'rgb(209 234 230)',
+				'sage-beige': 'rgb(245 245 220)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

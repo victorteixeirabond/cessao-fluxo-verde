@@ -16,7 +16,7 @@ const Index = () => {
         {/* Cabeçalho */}
         <div className="text-center">
           <h1 className="text-3xl font-bold text-eucalyptus-dark mb-2">
-            Plataforma de Cessão FIDIC
+            Plataforma de Cessão FIDC
           </h1>
           <p className="text-gray-600">
             Sistema interno para análise e processamento de carteiras de recebíveis

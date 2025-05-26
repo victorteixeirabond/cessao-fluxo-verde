@@ -75,6 +75,37 @@ const EnvioDados = () => {
 
   return (
     <div className="space-y-6">
+      {/* Upload de Arquivos */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-eucalyptus-dark">Arquivos CNAB</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <FileUpload
+              title="Upload CNAB (400 ou 600)"
+              acceptedTypes=".txt,.cnab"
+              onFileSelect={setCnabFiles}
+              multiple={true}
+            />
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-eucalyptus-dark">Notas Fiscais</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <FileUpload
+              title="Upload Notas Fiscais"
+              acceptedTypes=".pdf,.xml"
+              onFileSelect={setNfFiles}
+              multiple={true}
+            />
+          </CardContent>
+        </Card>
+      </div>
+
       {/* Formulário de Configuração */}
       <Card>
         <CardHeader>
@@ -134,37 +165,6 @@ const EnvioDados = () => {
         </CardContent>
       </Card>
 
-      {/* Upload de Arquivos */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-eucalyptus-dark">Arquivos CNAB</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <FileUpload
-              title="Upload CNAB (400 ou 600)"
-              acceptedTypes=".txt,.cnab"
-              onFileSelect={setCnabFiles}
-              multiple={true}
-            />
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-eucalyptus-dark">Notas Fiscais</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <FileUpload
-              title="Upload Notas Fiscais"
-              acceptedTypes=".pdf,.xml"
-              onFileSelect={setNfFiles}
-              multiple={true}
-            />
-          </CardContent>
-        </Card>
-      </div>
-
       {/* Botões de Ação */}
       <Card>
         <CardHeader>
@@ -184,7 +184,7 @@ const EnvioDados = () => {
               variant="outline"
               className="border-eucalyptus-dark text-eucalyptus-dark hover:bg-eucalyptus-pale"
             >
-              Upload Notas Fiscais
+              Enviar Notas Fiscais
             </Button>
             
             <Button

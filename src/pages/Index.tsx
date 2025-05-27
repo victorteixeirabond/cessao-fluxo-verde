@@ -25,29 +25,17 @@ const Index = () => {
 
         {/* Navegação por Abas */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-4 bg-eucalyptus-pale/30">
-            <TabsTrigger 
-              value="envio-dados"
-              className="data-[state=active]:bg-eucalyptus-dark data-[state=active]:text-white"
-            >
+          <TabsList className="grid w-full grid-cols-4">
+            <TabsTrigger value="envio-dados">
               Envio de Dados
             </TabsTrigger>
-            <TabsTrigger 
-              value="analise-estatistica"
-              className="data-[state=active]:bg-eucalyptus-dark data-[state=active]:text-white"
-            >
+            <TabsTrigger value="analise-estatistica">
               Análise Estatística
             </TabsTrigger>
-            <TabsTrigger 
-              value="resultados-criterios"
-              className="data-[state=active]:bg-eucalyptus-dark data-[state=active]:text-white"
-            >
+            <TabsTrigger value="resultados-criterios">
               Resultados de Critérios
             </TabsTrigger>
-            <TabsTrigger 
-              value="downloads"
-              className="data-[state=active]:bg-eucalyptus-dark data-[state=active]:text-white"
-            >
+            <TabsTrigger value="downloads">
               Downloads
             </TabsTrigger>
           </TabsList>
